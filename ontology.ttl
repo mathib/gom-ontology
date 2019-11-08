@@ -310,7 +310,7 @@ gom:toCoordinateSystem
   rdfs:comment "links an instance of gom:CoordinateSystemTransformation to an instance of gom:CoordinateSystem where the transformation is applied to"@en ;
   rdfs:domain gom:CoordinateSystemTransformation ;
   rdfs:isDefinedBy gom: ;
-  rdfs:label "from Coordinate System"@en ;
+  rdfs:label "to Coordinate System"@en ;
   rdfs:range gom:CoordinateSystem ;
 .
 gom:total95PercentUpperLimit

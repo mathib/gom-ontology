@@ -649,7 +649,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "from Coordinate System"
+    "@value" : "to Coordinate System"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/gom#CoordinateSystem"

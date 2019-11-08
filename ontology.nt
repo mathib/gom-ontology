@@ -131,7 +131,7 @@
 <https://w3id.org/gom#toCoordinateSystem> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/gom#CoordinateSystem> .
 <https://w3id.org/gom#toCoordinateSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "links an instance of gom:CoordinateSystemTransformation to an instance of gom:CoordinateSystem where the transformation is applied to"@en .
 <https://w3id.org/gom#toCoordinateSystem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/gom#> .
-<https://w3id.org/gom#toCoordinateSystem> <http://www.w3.org/2000/01/rdf-schema#label> "from Coordinate System"@en .
+<https://w3id.org/gom#toCoordinateSystem> <http://www.w3.org/2000/01/rdf-schema#label> "to Coordinate System"@en .
 # 
 # 
 # 

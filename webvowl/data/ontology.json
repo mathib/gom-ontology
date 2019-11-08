@@ -801,7 +801,7 @@
     },
     "label" : {
       "IRI-based" : "toCoordinateSystem",
-      "en" : "from Coordinate System"
+      "en" : "to Coordinate System"
     },
     "domain" : "11",
     "subproperty" : [ "13" ],

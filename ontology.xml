@@ -206,7 +206,7 @@ In addition, GOM provides terminology for some experimental data structures to m
         <rdfs:range rdf:resource="https://w3id.org/gom#CoordinateSystem"/>
         <rdfs:comment xml:lang="en">links an instance of gom:CoordinateSystemTransformation to an instance of gom:CoordinateSystem where the transformation is applied to</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/gom#"/>
-        <rdfs:label xml:lang="en">from Coordinate System</rdfs:label>
+        <rdfs:label xml:lang="en">to Coordinate System</rdfs:label>
     </owl:ObjectProperty>
     
 

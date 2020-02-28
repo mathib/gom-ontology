@@ -2,7 +2,7 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "en", "undefined" ],
-    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://purl.org/vocommons/voaf", "https://w3id.org/omg", "http://www.w3.org/2000/01/rdf-schema", "https://w3id.org/gom", "http://www.w3.org/2001/XMLSchema" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://purl.org/vocommons/voaf", "https://w3id.org/omg", "http://www.w3.org/2000/01/rdf-schema", "https://w3id.org/gom", "http://www.w3.org/2001/XMLSchema", "http://xmlns.com/foaf/0.1" ],
     "title" : {
       "en" : "GOM: Geometry Metadata Ontology"
     },
@@ -25,7 +25,7 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "https://www.researchgate.net/profile/Mathias_Bonduel",
+        "value" : "https://www.researchgate.net/profile/Anna_Wagner13",
         "type" : "iri"
       }, {
         "identifier" : "creator",
@@ -35,7 +35,7 @@
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "https://www.researchgate.net/profile/Anna_Wagner13",
+        "value" : "https://www.researchgate.net/profile/Mathias_Bonduel",
         "type" : "iri"
       } ],
       "preferredNamespacePrefix" : [ {
@@ -82,6 +82,11 @@
       }, {
         "identifier" : "example",
         "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/mathib/gom-ontology/master/examples/gom-demo.json",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
         "value" : "https://raw.githubusercontent.com/mathib/fog-ontology/master/examples/sample_abox_snk_contractor.ttl",
         "type" : "label"
       } ]
@@ -95,28 +100,31 @@
     "id" : "3",
     "type" : "owl:Class"
   }, {
-    "id" : "18",
+    "id" : "16",
     "type" : "owl:Class"
   }, {
-    "id" : "25",
+    "id" : "27",
     "type" : "rdfs:Literal"
   }, {
     "id" : "28",
     "type" : "owl:Class"
   }, {
-    "id" : "29",
+    "id" : "31",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "24",
+    "id" : "25",
     "type" : "owl:Class"
   }, {
     "id" : "36",
     "type" : "owl:Class"
   }, {
-    "id" : "44",
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "45",
+    "id" : "47",
     "type" : "owl:Thing"
   }, {
     "id" : "4",
@@ -125,70 +133,73 @@
     "id" : "11",
     "type" : "owl:Class"
   }, {
-    "id" : "20",
+    "id" : "18",
     "type" : "owl:Thing"
   }, {
     "id" : "15",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "34",
+    "id" : "33",
     "type" : "owl:Class"
   }, {
-    "id" : "46",
+    "id" : "48",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "6",
     "type" : "owl:Thing"
   }, {
-    "id" : "17",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "49",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "50",
-    "type" : "owl:Class"
-  }, {
-    "id" : "27",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "48",
+    "id" : "20",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "51",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "38",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "7",
-    "type" : "rdfs:Datatype"
-  }, {
     "id" : "52",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "2",
-    "type" : "rdfs:Datatype"
+    "type" : "owl:Class"
   }, {
     "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "9",
+    "id" : "50",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "54",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "58",
+    "id" : "40",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "43",
+    "id" : "7",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "45",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "12",
     "type" : "owl:Class"
   }, {
-    "id" : "31",
+    "id" : "23",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -251,11 +262,11 @@
     "comment" : {
       "en" : "An affine transformation between 3D Cartesian Coordinate Systems. An instance of this class links to exactly two gom:CartesianCoordinateSystem instances using resp. gom:fromCartesianCoordinateSystem and gom:toCartesianCoordinateSystem. Each instance of gom:AffineCoordinateSystemTransformation also links to one or multiple literals containing matrices defining the transformation. In the simplest example, there is only one such linked literal containing an entire 4 X 4 transformation matrix, linked with the gom:hasTransformationMatrix datatype property."
     },
-    "id" : "18",
+    "id" : "16",
     "superClasses" : [ "11" ]
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "25",
+    "id" : "27",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -313,7 +324,7 @@
     "id" : "28"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "29",
+    "id" : "31",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -337,8 +348,29 @@
     "comment" : {
       "en" : "A 3D Cartesian Coordinate System. One or multiple omg:Geometry or omg:GeometryState nodes can link to an instance of this class using gom:hasCoordinateSystem. If no named Coordinate System is linked explicitly to a geometry description, an unnamed Cartesian Coordinate System is assumed. A custom Cartesian Coordinate System can be registered in RDF to a world Cartesian Coordinate System by linking a gom:AffineCoordinateSystemTransformation instance to two instances of gom:CartesianCoordinateSystem"
     },
-    "id" : "24",
+    "id" : "25",
     "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://w3id.org/gom#BoundingVolume",
+    "baseIri" : "https://w3id.org/gom",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/gom#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BoundingVolume",
+      "en" : "Bounding Volume"
+    },
+    "comment" : {
+      "en" : "A closed 3D geometry representing a  bounding volume (e.g. a bounding box or another more exotic geometry). It is normally grouped into a omg:GeometryContext together with the geometry it wants to define a subpart of."
+    },
+    "id" : "36",
+    "superClasses" : [ "4" ]
   }, {
     "iri" : "https://w3id.org/gom#LengthUnit",
     "baseIri" : "https://w3id.org/gom",
@@ -358,10 +390,10 @@
     "comment" : {
       "en" : "A length unit for a Cartesian Coordinate System. Each such Coordinate System has exactly one length unit (e.g. metre, kilometre, etc.). The instance of this class can be defined in QUDT or other ontologies for units."
     },
-    "id" : "36"
+    "id" : "38"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "44",
+    "id" : "46",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -369,7 +401,7 @@
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "45",
+    "id" : "47",
     "label" : {
       "undefined" : "Thing"
     }
@@ -380,7 +412,7 @@
     "label" : {
       "IRI-based" : "Geometry"
     },
-    "subClasses" : [ "34", "31", "3" ],
+    "subClasses" : [ "36", "33", "23", "3" ],
     "attributes" : [ "external" ],
     "id" : "4"
   }, {
@@ -399,7 +431,7 @@
       "IRI-based" : "CoordinateSystemTransformation",
       "en" : "Coordinate System Transformation"
     },
-    "subClasses" : [ "18" ],
+    "subClasses" : [ "16" ],
     "comment" : {
       "en" : "A transformation between 3D Coordinate Systems. An instance of this class links to exactly two gom:CoordinateSystem instances using resp. gom:fromCoordinateSystem and gom:toCoordinateSystem. Each instance of gom:CoordinateSystemTransformation also links to one or multiple literals containing matrices or individual parameters defining the transformation."
     },
@@ -407,7 +439,7 @@
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "20",
+    "id" : "18",
     "label" : {
       "undefined" : "Thing"
     }
@@ -437,12 +469,12 @@
     "comment" : {
       "en" : "A point cloud geometry consisting of a series of 3D points, with optional color and other scalar values"
     },
-    "id" : "34",
+    "id" : "33",
     "superClasses" : [ "4" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "46",
+    "id" : "48",
     "label" : {
       "IRI-based" : "decimal"
     }
@@ -456,14 +488,14 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "17",
+    "id" : "20",
     "label" : {
       "IRI-based" : "boolean"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "49",
+    "id" : "51",
     "label" : {
       "IRI-based" : "decimal"
     }
@@ -482,32 +514,84 @@
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "50"
+    "id" : "52"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Person",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "individuals" : [ {
+      "iri" : "https://www.researchgate.net/profile/Pieter_Pauwels",
+      "baseIri" : "https://www.researchgate.net/profile",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "Pieter Pauwels",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Pieter_Pauwels"
+      }
+    }, {
+      "iri" : "https://www.researchgate.net/profile/Mathias_Bonduel",
+      "baseIri" : "https://www.researchgate.net/profile",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "Mathias Bonduel",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Mathias_Bonduel"
+      }
+    }, {
+      "iri" : "https://www.researchgate.net/profile/Anna_Wagner13",
+      "baseIri" : "https://www.researchgate.net/profile",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "Anna Wagner",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Anna_Wagner13"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "53"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "27",
+    "id" : "30",
     "label" : {
       "IRI-based" : "decimal"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "48",
+    "id" : "50",
     "label" : {
       "IRI-based" : "decimal"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "51",
+    "id" : "54",
     "label" : {
       "IRI-based" : "nonNegativeInteger"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "38",
+    "id" : "40",
     "label" : {
       "IRI-based" : "decimal"
     }
@@ -521,7 +605,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "52",
+    "id" : "55",
     "label" : {
       "IRI-based" : "decimal"
     }
@@ -535,7 +619,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "53",
+    "id" : "56",
     "label" : {
       "IRI-based" : "decimal"
     }
@@ -549,21 +633,21 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "54",
+    "id" : "57",
     "label" : {
       "IRI-based" : "decimal"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "58",
+    "id" : "61",
     "label" : {
       "IRI-based" : "nonNegativeInteger"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "43",
+    "id" : "45",
     "label" : {
       "IRI-based" : "nonNegativeInteger"
     }
@@ -583,7 +667,7 @@
       "IRI-based" : "CoordinateSystem",
       "en" : "Coordinate System"
     },
-    "subClasses" : [ "24" ],
+    "subClasses" : [ "25" ],
     "comment" : {
       "en" : "A 3D Coordinate System. One or multiple omg:Geometry or omg:GeometryState nodes can link to an instance of this class using gom:hasCoordinateSystem. If no named Coordinate System is linked explicitly to a geometry description, an unnamed Cartesian Coordinate System is assumed. A custom Coordinate System can be registered in RDF by linking a gom:CoordinateSystemTransformation instance to this Coordinate System (gom:fromCoordinateSystem) and a second instance of gom:CoordinateSystem (gom:toCoordinateSystem)"
     },
@@ -607,7 +691,7 @@
     "comment" : {
       "en" : "A 3D mesh geometry consisting of planar faces connected via their edges"
     },
-    "id" : "31",
+    "id" : "23",
     "superClasses" : [ "4" ]
   } ],
   "property" : [ {
@@ -626,11 +710,11 @@
     "id" : "14",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "16",
-    "type" : "owl:datatypeProperty"
+    "id" : "17",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "19",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "21",
     "type" : "rdfs:SubClassOf"
@@ -638,65 +722,56 @@
     "id" : "22",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "23",
+    "id" : "24",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "26",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "30",
     "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "32",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "33",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "34",
+    "type" : "owl:datatypeProperty"
+  }, {
     "id" : "35",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "37",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "39",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "40",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "42",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "47",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "55",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "56",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "57",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "59",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "60",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "61",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "62",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "63",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "41",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "64",
     "type" : "owl:datatypeProperty"
@@ -705,6 +780,18 @@
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "66",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "68",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "69",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "13",
@@ -730,7 +817,7 @@
     "comment" : {
       "en" : "The maximum calculated deviation distance to classify a point on the surface of the simplified geometry as being occluded. It is a setting of the represented accuracy analysis."
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "1"
   }, {
     "iri" : "https://w3id.org/gom#hasVertices",
@@ -763,7 +850,7 @@
     "comment" : {
       "en" : "the number of vertices of a mesh or point cloud geometry description"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "5"
   }, {
     "iri" : "https://w3id.org/gom#totalLOA10",
@@ -785,7 +872,7 @@
     "comment" : {
       "en" : "The percentage of total relevant surface area of the simplified geometry that is occluded in LOA10 (deviation > 50 mm)"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "8"
   }, {
     "iri" : "https://w3id.org/gom#toCoordinateSystem",
@@ -808,7 +895,7 @@
     "comment" : {
       "en" : "links an instance of gom:CoordinateSystemTransformation to an instance of gom:CoordinateSystem where the transformation is applied to"
     },
-    "attributes" : [ "functional", "object" ],
+    "attributes" : [ "object", "functional" ],
     "id" : "10"
   }, {
     "iri" : "https://w3id.org/gom#totalRelevant",
@@ -830,12 +917,45 @@
     "comment" : {
       "en" : "The percentage of total relevant surface area of the simplified geometry"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "14"
+  }, {
+    "iri" : "https://w3id.org/gom#hasSurveyGeometry",
+    "baseIri" : "https://w3id.org/gom",
+    "range" : "18",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/gom#",
+        "type" : "iri"
+      } ],
+      "rangeIncludes" : [ {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
+        "value" : "https://w3id.org/omg#GeometryState",
+        "type" : "iri"
+      }, {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
+        "value" : "https://w3id.org/omg#Geometry",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSurveyGeometry",
+      "en" : "has survey geometry"
+    },
+    "domain" : "0",
+    "comment" : {
+      "en" : "The survey geometry where a gom:RepresentedAccuracyAnalysis starts from."
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "17"
   }, {
     "iri" : "https://w3id.org/gom#usedLocalModelMethod",
     "baseIri" : "https://w3id.org/gom",
-    "range" : "17",
+    "range" : "20",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -852,60 +972,32 @@
     "comment" : {
       "en" : "A boolean datatype property to express if the represented accuracy analysis method used a local model or not."
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "16"
-  }, {
-    "iri" : "https://w3id.org/gom#hasSurveyGeometry",
-    "baseIri" : "https://w3id.org/gom",
-    "range" : "20",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/gom#",
-        "type" : "iri"
-      } ],
-      "rangeIncludes" : [ {
-        "identifier" : "rangeIncludes",
-        "language" : "undefined",
-        "value" : "https://w3id.org/omg#Geometry",
-        "type" : "iri"
-      }, {
-        "identifier" : "rangeIncludes",
-        "language" : "undefined",
-        "value" : "https://w3id.org/omg#GeometryState",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "hasSurveyGeometry",
-      "en" : "has survey geometry"
-    },
-    "domain" : "0",
-    "comment" : {
-      "en" : "The survey geometry where a gom:RepresentedAccuracyAnalysis starts from."
-    },
-    "attributes" : [ "functional", "object" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "19"
-  }, {
-    "range" : "11",
-    "domain" : "18",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "21"
   }, {
     "range" : "4",
     "domain" : "3",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "21"
+  }, {
+    "range" : "4",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "22"
   }, {
     "range" : "12",
-    "domain" : "24",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "23"
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24"
+  }, {
+    "range" : "11",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "26"
   }, {
     "iri" : "https://w3id.org/gom#totalLOA50",
     "baseIri" : "https://w3id.org/gom",
-    "range" : "27",
+    "range" : "30",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -922,17 +1014,17 @@
     "comment" : {
       "en" : "The percentage of total relevant surface area of the simplified geometry that is occluded in LOA50 (1 mm > deviation > 0 mm)"
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "26"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "29"
   }, {
     "range" : "4",
-    "domain" : "31",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "30"
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "32"
   }, {
     "iri" : "https://w3id.org/gom#hasAnalysisFile",
     "baseIri" : "https://w3id.org/gom",
-    "range" : "29",
+    "range" : "31",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -949,17 +1041,17 @@
     "comment" : {
       "en" : "Links to an RDF literal containing an embedded analysis file or a reference to such a file."
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "32"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "34"
   }, {
     "range" : "4",
-    "domain" : "34",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "33"
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "35"
   }, {
     "iri" : "https://w3id.org/gom#hasCoordinateSystem",
     "baseIri" : "https://w3id.org/gom",
-    "range" : "36",
+    "range" : "38",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -972,16 +1064,16 @@
       "IRI-based" : "hasCoordinateSystem",
       "en" : "has length unit"
     },
-    "domain" : "24",
+    "domain" : "25",
     "comment" : {
       "en" : "Geometry description is defined in exactly one Coordinate System. This property links a omg:Geometry of omg:GeometryState instance to a gom:CoordinateSystem instance."
     },
-    "attributes" : [ "functional", "object" ],
-    "id" : "35"
+    "attributes" : [ "object", "functional" ],
+    "id" : "37"
   }, {
     "iri" : "https://w3id.org/gom#hasSurfaceArea",
     "baseIri" : "https://w3id.org/gom",
-    "range" : "38",
+    "range" : "40",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -992,12 +1084,12 @@
       "domainIncludes" : [ {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "https://w3id.org/omg#Geometry",
+        "value" : "https://w3id.org/omg#GeometryState",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "https://w3id.org/omg#GeometryState",
+        "value" : "https://w3id.org/omg#Geometry",
         "type" : "iri"
       } ]
     },
@@ -1009,12 +1101,12 @@
     "comment" : {
       "en" : "the area of a volumetric (closed) geometry description. The units of this value are in m2"
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "37"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "39"
   }, {
     "iri" : "https://w3id.org/gom#hasSimplifiedGeometry",
     "baseIri" : "https://w3id.org/gom",
-    "range" : "20",
+    "range" : "18",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1025,12 +1117,12 @@
       "rangeIncludes" : [ {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
-        "value" : "https://w3id.org/omg#GeometryState",
+        "value" : "https://w3id.org/omg#Geometry",
         "type" : "iri"
       }, {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
-        "value" : "https://w3id.org/omg#Geometry",
+        "value" : "https://w3id.org/omg#GeometryState",
         "type" : "iri"
       } ]
     },
@@ -1042,12 +1134,12 @@
     "comment" : {
       "en" : "The simplified geometry of a gom:RepresentedAccuracyAnalysis that is compared with a survey geometry."
     },
-    "attributes" : [ "functional", "object" ],
-    "id" : "39"
+    "attributes" : [ "object", "functional" ],
+    "id" : "41"
   }, {
     "iri" : "https://w3id.org/gom#fromCartesianCoordinateSystem",
     "baseIri" : "https://w3id.org/gom",
-    "range" : "24",
+    "range" : "25",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1060,17 +1152,17 @@
       "IRI-based" : "fromCartesianCoordinateSystem",
       "en" : "from Cartesian Coordinate System"
     },
-    "superproperty" : [ "41" ],
-    "domain" : "18",
+    "superproperty" : [ "43" ],
+    "domain" : "16",
     "comment" : {
       "en" : "links to an instance of gom:CartesianCoordinateSystem where the transformation results in"
     },
-    "attributes" : [ "functional", "object" ],
-    "id" : "40"
+    "attributes" : [ "object", "functional" ],
+    "id" : "42"
   }, {
     "iri" : "https://w3id.org/gom#hasFaces",
     "baseIri" : "https://w3id.org/gom",
-    "range" : "43",
+    "range" : "45",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1098,12 +1190,12 @@
     "comment" : {
       "en" : "the number of faces of a mesh geometry description"
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "42"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "44"
   }, {
     "iri" : "https://w3id.org/gom#totalLOA40",
     "baseIri" : "https://w3id.org/gom",
-    "range" : "48",
+    "range" : "50",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1120,8 +1212,8 @@
     "comment" : {
       "en" : "The percentage of total relevant surface area of the simplified geometry that is occluded in LOA40 (5 mm > deviation > 1 mm)"
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "47"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "49"
   }, {
     "iri" : "https://w3id.org/gom#createdIn",
     "baseIri" : "https://w3id.org/gom",
@@ -1149,16 +1241,49 @@
       "IRI-based" : "createdIn",
       "en" : "created in"
     },
-    "domain" : "45",
+    "domain" : "47",
     "comment" : {
       "en" : "property to link to the geometry modelling application the geometry description was created in"
     },
-    "attributes" : [ "functional", "object" ],
-    "id" : "55"
+    "attributes" : [ "object", "functional" ],
+    "id" : "58"
+  }, {
+    "iri" : "https://w3id.org/gom#hasTransformationMatrix",
+    "baseIri" : "https://w3id.org/gom",
+    "range" : "46",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/gom#",
+        "type" : "iri"
+      } ],
+      "rangeIncludes" : [ {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
+        "value" : "https://w3id.org/gom#columnMajorArray",
+        "type" : "iri"
+      }, {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
+        "value" : "https://w3id.org/gom#rowMajorArray",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasTransformationMatrix",
+      "en" : "has a transformation matrix"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "has a single 4 X 4 transformation matrix. This datatype property links a gom:AffineCoordinateSystemTransformation to exactly one 4 X 4 transformation matrix M. Currently, two approaches can be used to define this matrix in one literal, i.e. using a JSON row major array (gom:rowMajorArray) or a column major array (gom:columnMajorArray)."
+    },
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "59"
   }, {
     "iri" : "https://w3id.org/gom#totalLOA30",
     "baseIri" : "https://w3id.org/gom",
-    "range" : "49",
+    "range" : "51",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1175,45 +1300,12 @@
     "comment" : {
       "en" : "The percentage of total relevant surface area of the simplified geometry that is occluded in LOA30 (15 mm > deviation > 5 mm)"
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "56"
-  }, {
-    "iri" : "https://w3id.org/gom#hasTransformationMatrix",
-    "baseIri" : "https://w3id.org/gom",
-    "range" : "44",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/gom#",
-        "type" : "iri"
-      } ],
-      "rangeIncludes" : [ {
-        "identifier" : "rangeIncludes",
-        "language" : "undefined",
-        "value" : "https://w3id.org/gom#rowMajorArray",
-        "type" : "iri"
-      }, {
-        "identifier" : "rangeIncludes",
-        "language" : "undefined",
-        "value" : "https://w3id.org/gom#columnMajorArray",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "hasTransformationMatrix",
-      "en" : "has a transformation matrix"
-    },
-    "domain" : "18",
-    "comment" : {
-      "en" : "has a single 4 X 4 transformation matrix. This datatype property links a gom:AffineCoordinateSystemTransformation to exactly one 4 X 4 transformation matrix M. Currently, two approaches can be used to define this matrix in one literal, i.e. using a JSON row major array (gom:rowMajorArray) or a column major array (gom:columnMajorArray)."
-    },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "57"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "60"
   }, {
     "iri" : "https://w3id.org/gom#hasLengthUnit",
     "baseIri" : "https://w3id.org/gom",
-    "range" : "36",
+    "range" : "38",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1226,16 +1318,16 @@
       "IRI-based" : "hasLengthUnit",
       "en" : "has length unit"
     },
-    "domain" : "24",
+    "domain" : "25",
     "comment" : {
       "en" : "Each Cartesian Coordinate System has exactly one length unit. If such a Coordinate System does not link to a length unit, it is assumed to be in metre."
     },
-    "attributes" : [ "functional", "object" ],
-    "id" : "59"
+    "attributes" : [ "object", "functional" ],
+    "id" : "62"
   }, {
     "iri" : "https://w3id.org/gom#hasEdges",
     "baseIri" : "https://w3id.org/gom",
-    "range" : "58",
+    "range" : "61",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1263,12 +1355,12 @@
     "comment" : {
       "en" : "the number of edges of a mesh geometry description"
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "60"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "63"
   }, {
     "iri" : "https://w3id.org/gom#total95PercentUpperLimit",
     "baseIri" : "https://w3id.org/gom",
-    "range" : "53",
+    "range" : "56",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1285,12 +1377,12 @@
     "comment" : {
       "en" : "The total deviation limit in mm where 95% of the surface area complies with."
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "61"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "64"
   }, {
     "iri" : "https://w3id.org/gom#hasFileSize",
     "baseIri" : "https://w3id.org/gom",
-    "range" : "51",
+    "range" : "54",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1318,12 +1410,12 @@
     "comment" : {
       "en" : "the file size of the geometry description in bytes. If the geometry description includes material and/or texture files, the size of these files is included."
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "62"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "65"
   }, {
     "iri" : "https://w3id.org/gom#totalLOA20",
     "baseIri" : "https://w3id.org/gom",
-    "range" : "54",
+    "range" : "57",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1340,8 +1432,8 @@
     "comment" : {
       "en" : "The percentage of total relevant surface area of the simplified geometry that is occluded in LOA20 (50 mm > deviation > 15 mm)"
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "63"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "66"
   }, {
     "iri" : "https://w3id.org/gom#fromCoordinateSystem",
     "baseIri" : "https://w3id.org/gom",
@@ -1359,16 +1451,16 @@
       "en" : "from Coordinate System"
     },
     "domain" : "11",
-    "subproperty" : [ "40" ],
+    "subproperty" : [ "42" ],
     "comment" : {
       "en" : "links to an instance of gom:CoordinateSystem where the transformation results in"
     },
-    "attributes" : [ "functional", "object" ],
-    "id" : "41"
+    "attributes" : [ "object", "functional" ],
+    "id" : "43"
   }, {
     "iri" : "https://w3id.org/gom#locallyTransformedByMatrix",
     "baseIri" : "https://w3id.org/gom",
-    "range" : "25",
+    "range" : "27",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1402,12 +1494,12 @@
     "comment" : {
       "undefined" : "Property to link a omg:Geometry, that transforms (omg:transformsGeometry) another omg:Geometry (prototype geometry), to an RDF literal containing the 4x4 transformation matrix. {@en}x"
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "64"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "67"
   }, {
     "iri" : "https://w3id.org/gom#hasVolume",
     "baseIri" : "https://w3id.org/gom",
-    "range" : "52",
+    "range" : "55",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1418,12 +1510,12 @@
       "domainIncludes" : [ {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "https://w3id.org/omg#GeometryState",
+        "value" : "https://w3id.org/omg#Geometry",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "https://w3id.org/omg#Geometry",
+        "value" : "https://w3id.org/omg#GeometryState",
         "type" : "iri"
       } ]
     },
@@ -1435,12 +1527,12 @@
     "comment" : {
       "en" : "the volume of a volumetric (closed) geometry description. The units of this value are in m3"
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "65"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "68"
   }, {
     "iri" : "https://w3id.org/gom#totalOccluded",
     "baseIri" : "https://w3id.org/gom",
-    "range" : "46",
+    "range" : "48",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1457,12 +1549,12 @@
     "comment" : {
       "en" : "The percentage of total relevant surface area of the simplified geometry that is occluded"
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "66"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "69"
   }, {
     "iri" : "https://w3id.org/gom#toCartesianCoordinateSystem",
     "baseIri" : "https://w3id.org/gom",
-    "range" : "24",
+    "range" : "25",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1476,11 +1568,11 @@
       "en" : "to Cartesian Coordinate System"
     },
     "superproperty" : [ "10" ],
-    "domain" : "18",
+    "domain" : "16",
     "comment" : {
       "en" : "links to an instance of gom:CartesianCoordinateSystem where the transformation is applied to"
     },
-    "attributes" : [ "functional", "object" ],
+    "attributes" : [ "object", "functional" ],
     "id" : "13"
   } ]
 }

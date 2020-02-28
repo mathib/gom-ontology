@@ -7,6 +7,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/"
@@ -25,7 +26,7 @@ In addition, GOM provides terminology for some experimental data structures to m
         <terms:title xml:lang="en">GOM: Geometry Metadata Ontology</terms:title>
         <vann:example>https://raw.githubusercontent.com/mathib/fog-ontology/master/examples/sample_abox_snk_contractor.ttl</vann:example>
         <vann:example>https://raw.githubusercontent.com/mathib/fog-ontology/master/examples/sample_abox_snk_inspector.ttl</vann:example>
-		<vann:example>https://raw.githubusercontent.com/mathib/gom-ontology/master/examples/gom-demo.json</vann:example>
+        <vann:example>https://raw.githubusercontent.com/mathib/gom-ontology/master/examples/gom-demo.json</vann:example>
         <vann:preferredNamespacePrefix>gom</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://w3id.org/gom#</vann:preferredNamespaceUri>
         <rdfs:comment xml:lang="en">- Version 0.0.1: initial version</rdfs:comment>
@@ -34,7 +35,7 @@ In addition, GOM provides terminology for some experimental data structures to m
     
 
 
-    <!-- 
+   <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Datatypes
@@ -86,7 +87,7 @@ In addition, GOM provides terminology for some experimental data structures to m
     <owl:ObjectProperty rdf:about="https://w3id.org/gom#createdIn">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="https://w3id.org/gom#GeometryModellingApplication"/>
-		<schema:domainIncludes rdf:resource="https://w3id.org/omg#Geometry"/>
+        <schema:domainIncludes rdf:resource="https://w3id.org/omg#Geometry"/>
         <schema:domainIncludes rdf:resource="https://w3id.org/omg#GeometryState"/>
         <rdfs:comment xml:lang="en">property to link to the geometry modelling application the geometry description was created in</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/gom#"/>
@@ -218,7 +219,9 @@ In addition, GOM provides terminology for some experimental data structures to m
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
-  
+
+
+    
 
 
     <!-- https://w3id.org/gom#hasAnalysisFile -->
@@ -504,13 +507,7 @@ In addition, GOM provides terminology for some experimental data structures to m
 
 
     
-
-
-    <!-- http://purl.org/vocommons/voaf#Vocabulary -->
-
-
-    <owl:Class rdf:about="http://purl.org/vocommons/voaf#Vocabulary"/>
-    
+ 
 
 
     <!-- https://w3id.org/gom#AffineCoordinateSystemTransformation -->
@@ -521,6 +518,18 @@ In addition, GOM provides terminology for some experimental data structures to m
         <rdfs:comment xml:lang="en">An affine transformation between 3D Cartesian Coordinate Systems. An instance of this class links to exactly two gom:CartesianCoordinateSystem instances using resp. gom:fromCartesianCoordinateSystem and gom:toCartesianCoordinateSystem. Each instance of gom:AffineCoordinateSystemTransformation also links to one or multiple literals containing matrices defining the transformation. In the simplest example, there is only one such linked literal containing an entire 4 X 4 transformation matrix, linked with the gom:hasTransformationMatrix datatype property.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/gom#"/>
         <rdfs:label xml:lang="en">Affine Coordinate System Transformation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/gom#BoundingVolume -->
+
+
+    <owl:Class rdf:about="https://w3id.org/gom#BoundingVolume">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/omg#Geometry"/>
+        <rdfs:comment xml:lang="en">A closed 3D geometry representing a  bounding volume (e.g. a bounding box or another more exotic geometry). It is normally grouped into a omg:GeometryContext together with the geometry it wants to define a subpart of.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/gom#"/>
+        <rdfs:label xml:lang="en">Bounding Volume</rdfs:label>
     </owl:Class>
     
 
@@ -627,14 +636,6 @@ In addition, GOM provides terminology for some experimental data structures to m
     </owl:Class>
     
 
-
-    <!-- https://w3id.org/omg#Geometry -->
-
-
-    <owl:Class rdf:about="https://w3id.org/omg#Geometry"/>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -677,6 +678,34 @@ In addition, GOM provides terminology for some experimental data structures to m
     </owl:NamedIndividual>
     
 
+
+    <!-- https://www.researchgate.net/profile/Anna_Wagner13 -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.researchgate.net/profile/Anna_Wagner13">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:name>Anna Wagner</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.researchgate.net/profile/Mathias_Bonduel -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.researchgate.net/profile/Mathias_Bonduel">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:name>Mathias Bonduel</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.researchgate.net/profile/Pieter_Pauwels -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.researchgate.net/profile/Pieter_Pauwels">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:name>Pieter Pauwels</foaf:name>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 

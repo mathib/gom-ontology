@@ -65,6 +65,23 @@
     "@id" : "https://w3id.org/gom#CoordinateSystemTransformation"
   } ]
 }, {
+  "@id" : "https://w3id.org/gom#BoundingVolume",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A closed 3D geometry representing a  bounding volume (e.g. a bounding box or another more exotic geometry). It is normally grouped into a omg:GeometryContext together with the geometry it wants to define a subpart of."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/gom#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Bounding Volume"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/omg#Geometry"
+  } ]
+}, {
   "@id" : "https://w3id.org/gom#CartesianCoordinateSystem",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -238,7 +255,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/gom#createdIn",
-  "@type" : [ "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://schema.org/domainIncludes" : [ {
     "@id" : "https://w3id.org/omg#Geometry"
   }, {
@@ -833,5 +850,23 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://www.researchgate.net/profile/Anna_Wagner13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://xmlns.com/foaf/0.1/Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Anna Wagner"
+  } ]
+}, {
+  "@id" : "https://www.researchgate.net/profile/Mathias_Bonduel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://xmlns.com/foaf/0.1/Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Mathias Bonduel"
+  } ]
+}, {
+  "@id" : "https://www.researchgate.net/profile/Pieter_Pauwels",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://xmlns.com/foaf/0.1/Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Pieter Pauwels"
   } ]
 } ]

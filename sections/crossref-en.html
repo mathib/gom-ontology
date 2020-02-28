@@ -11,6 +11,9 @@ This section provides details for each class and property defined by GOM: Geomet
             title="https://w3id.org/gom#AffineCoordinateSystemTransformation">Affine Coordinate System Transformation</a>
       </li>
       <li>
+         <a href="#BoundingVolume" title="https://w3id.org/gom#BoundingVolume">Bounding Volume</a>
+      </li>
+      <li>
          <a href="#CartesianCoordinateSystem" title="https://w3id.org/gom#CartesianCoordinateSystem">Coordinate System</a>
       </li>
       <li>
@@ -91,6 +94,30 @@ This section provides details for each class and property defined by GOM: Geomet
             <sup class="type-op" title="object property">op</sup>, <a href="#hasTransformationMatrix" title="https://w3id.org/gom#hasTransformationMatrix">has a transformation matrix</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#toCartesianCoordinateSystem" title="https://w3id.org/gom#toCartesianCoordinateSystem">to Cartesian Coordinate System</a>
             <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="BoundingVolume">
+      <h3>Bounding Volume<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/gom#BoundingVolume</p>
+      <div class="comment">
+         <span class="markdown">A closed 3D geometry representing a  bounding volume (e.g. a bounding box or another more exotic geometry). It is normally grouped into a omg:GeometryContext together with the geometry it wants to define a subpart of.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/gom#">https://w3id.org/gom#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="https://w3id.org/omg#Geometry">geometry</span>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -345,9 +372,6 @@ This section provides details for each class and property defined by GOM: Geomet
          <a href="#fromCoordinateSystem" title="https://w3id.org/gom#fromCoordinateSystem">from Coordinate System</a>
       </li>
       <li>
-         <a href="#toCoordinateSystem" title="https://w3id.org/gom#toCoordinateSystem">to Coordinate System</a>
-      </li>
-      <li>
          <a href="#hasCoordinateSystem" title="https://w3id.org/gom#hasCoordinateSystem">has length unit</a>
       </li>
       <li>
@@ -361,6 +385,9 @@ This section provides details for each class and property defined by GOM: Geomet
       </li>
       <li>
          <a href="#toCartesianCoordinateSystem" title="https://w3id.org/gom#toCartesianCoordinateSystem">to Cartesian Coordinate System</a>
+      </li>
+      <li>
+         <a href="#toCoordinateSystem" title="https://w3id.org/gom#toCoordinateSystem">to Coordinate System</a>
       </li>
    </ul>
    <div class="entity" id="createdIn">
@@ -463,45 +490,6 @@ This section provides details for each class and property defined by GOM: Geomet
             <dd>
                <a href="#fromCartesianCoordinateSystem"
                   title="https://w3id.org/gom#fromCartesianCoordinateSystem">from Cartesian Coordinate System</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#CoordinateSystemTransformation"
-                  title="https://w3id.org/gom#CoordinateSystemTransformation">Coordinate System Transformation</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#CoordinateSystem" title="https://w3id.org/gom#CoordinateSystem">Coordinate System</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="toCoordinateSystem">
-      <h3>to Coordinate System<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/gom#toCoordinateSystem</p>
-      <div class="comment">
-         <span class="markdown">links an instance of gom:CoordinateSystemTransformation to an instance of gom:CoordinateSystem where the transformation is applied to</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="https://w3id.org/gom#">https://w3id.org/gom#</a>
-         </dd>
-      </dl>
-      <div class="description">
-         <p>
-            <strong>has characteristics:</strong> functional</p>
-         <dl>
-            <dt>has sub-properties</dt>
-            <dd>
-               <a href="#toCartesianCoordinateSystem" title="https://w3id.org/gom#toCartesianCoordinateSystem">to Cartesian Coordinate System</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
@@ -690,6 +678,45 @@ This section provides details for each class and property defined by GOM: Geomet
             <dt>has range</dt>
             <dd>
                <a href="#CartesianCoordinateSystem" title="https://w3id.org/gom#CartesianCoordinateSystem">Coordinate System</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="toCoordinateSystem">
+      <h3>to Coordinate System<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/gom#toCoordinateSystem</p>
+      <div class="comment">
+         <span class="markdown">links an instance of gom:CoordinateSystemTransformation to an instance of gom:CoordinateSystem where the transformation is applied to</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/gom#">https://w3id.org/gom#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#toCartesianCoordinateSystem" title="https://w3id.org/gom#toCartesianCoordinateSystem">to Cartesian Coordinate System</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#CoordinateSystemTransformation"
+                  title="https://w3id.org/gom#CoordinateSystemTransformation">Coordinate System Transformation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#CoordinateSystem" title="https://w3id.org/gom#CoordinateSystem">Coordinate System</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>

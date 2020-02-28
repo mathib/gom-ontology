@@ -15,6 +15,8 @@
 <https://w3id.org/gom> <http://www.w3.org/2000/01/rdf-schema#comment> "- Version 0.0.1: initial version"@en .
 <https://w3id.org/gom> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1" .
 # 
+# 
+# 
 # #################################################################
 # #
 # #    Datatypes
@@ -42,20 +44,16 @@
 # #
 # #################################################################
 # 
-#
 # 
 # https://w3id.org/gom#createdIn
 <https://w3id.org/gom#createdIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/gom#createdIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/gom#createdIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/gom#GeometryModellingApplication> .
 <https://w3id.org/gom#createdIn> <http://schema.org/domainIncludes> <https://w3id.org/omg#Geometry> .
 <https://w3id.org/gom#createdIn> <http://schema.org/domainIncludes> <https://w3id.org/omg#GeometryState> .
 <https://w3id.org/gom#createdIn> <http://www.w3.org/2000/01/rdf-schema#comment> "property to link to the geometry modelling application the geometry description was created in"@en .
 <https://w3id.org/gom#createdIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/gom#> .
 <https://w3id.org/gom#createdIn> <http://www.w3.org/2000/01/rdf-schema#label> "created in"@en .
-#
-# https://w3id.org/gom#createdIn
-<https://w3id.org/gom#createdIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/gom#createdIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://w3id.org/gom#createdIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/gom#GeometryModellingApplication> .
 # 
 # https://w3id.org/gom#fromCartesianCoordinateSystem
 <https://w3id.org/gom#fromCartesianCoordinateSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -336,6 +334,13 @@
 <https://w3id.org/gom#AffineCoordinateSystemTransformation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/gom#> .
 <https://w3id.org/gom#AffineCoordinateSystemTransformation> <http://www.w3.org/2000/01/rdf-schema#label> "Affine Coordinate System Transformation"@en .
 # 
+# https://w3id.org/gom#BoundingVolume
+<https://w3id.org/gom#BoundingVolume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/gom#BoundingVolume> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/omg#Geometry> .
+<https://w3id.org/gom#BoundingVolume> <http://www.w3.org/2000/01/rdf-schema#comment> "A closed 3D geometry representing a  bounding volume (e.g. a bounding box or another more exotic geometry). It is normally grouped into a omg:GeometryContext together with the geometry it wants to define a subpart of."@en .
+<https://w3id.org/gom#BoundingVolume> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/gom#> .
+<https://w3id.org/gom#BoundingVolume> <http://www.w3.org/2000/01/rdf-schema#label> "Bounding Volume"@en .
+# 
 # https://w3id.org/gom#CartesianCoordinateSystem
 <https://w3id.org/gom#CartesianCoordinateSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/gom#CartesianCoordinateSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/gom#CoordinateSystem> .
@@ -370,7 +375,6 @@
 # https://w3id.org/gom#MeshGeometry
 <https://w3id.org/gom#MeshGeometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/gom#MeshGeometry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/omg#Geometry> .
-<https://w3id.org/omg#Geometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/gom#MeshGeometry> <http://www.w3.org/2000/01/rdf-schema#comment> "A 3D mesh geometry consisting of planar faces connected via their edges"@en .
 <https://w3id.org/gom#MeshGeometry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/gom#> .
 <https://w3id.org/gom#MeshGeometry> <http://www.w3.org/2000/01/rdf-schema#label> "Mesh geometry"@en .
@@ -421,5 +425,19 @@
 <https://w3id.org/gom#Rhinoceros_v6> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/gom#> .
 <https://w3id.org/gom#Rhinoceros_v6> <http://www.w3.org/2000/01/rdf-schema#label> "Rhinoceros v6 CAD application"@en .
 # 
+# https://www.researchgate.net/profile/Anna_Wagner13
+<https://www.researchgate.net/profile/Anna_Wagner13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.researchgate.net/profile/Anna_Wagner13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<https://www.researchgate.net/profile/Anna_Wagner13> <http://xmlns.com/foaf/0.1/name> "Anna Wagner" .
+# 
+# https://www.researchgate.net/profile/Mathias_Bonduel
+<https://www.researchgate.net/profile/Mathias_Bonduel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.researchgate.net/profile/Mathias_Bonduel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<https://www.researchgate.net/profile/Mathias_Bonduel> <http://xmlns.com/foaf/0.1/name> "Mathias Bonduel" .
+# 
+# https://www.researchgate.net/profile/Pieter_Pauwels
+<https://www.researchgate.net/profile/Pieter_Pauwels> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.researchgate.net/profile/Pieter_Pauwels> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<https://www.researchgate.net/profile/Pieter_Pauwels> <http://xmlns.com/foaf/0.1/name> "Pieter Pauwels" .
 # 
 # Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

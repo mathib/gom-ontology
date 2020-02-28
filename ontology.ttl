@@ -20,7 +20,6 @@
 @prefix wd: <https://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-
 <https://w3id.org/gom>
   rdf:type voaf:Vocabulary ;
   rdf:type owl:Ontology ;
@@ -49,6 +48,13 @@ gom:AffineCoordinateSystemTransformation
   rdfs:isDefinedBy gom: ;
   rdfs:label "Affine Coordinate System Transformation"@en ;
   rdfs:subClassOf gom:CoordinateSystemTransformation ;
+.
+gom:BoundingVolume
+  rdf:type owl:Class ;
+  rdfs:comment "A closed 3D geometry representing a  bounding volume (e.g. a bounding box or another more exotic geometry). It is normally grouped into a omg:GeometryContext together with the geometry it wants to define a subpart of."@en ;
+  rdfs:isDefinedBy gom: ;
+  rdfs:label "Bounding Volume"@en ;
+  rdfs:subClassOf omg:Geometry ;
 .
 gom:CartesianCoordinateSystem
   rdf:type owl:Class ;
@@ -125,8 +131,8 @@ gom:columnMajorArray
   rdfs:label "a column major array"@en ;
 .
 gom:createdIn
-  rdf:type owl:ObjectProperty ;
   rdf:type owl:FunctionalProperty ;
+  rdf:type owl:ObjectProperty ;
   schema:domainIncludes omg:Geometry ;
   schema:domainIncludes omg:GeometryState ;
   rdfs:comment "property to link to the geometry modelling application the geometry description was created in"@en ;
@@ -393,4 +399,16 @@ gom:usedLocalModelMethod
   rdfs:isDefinedBy gom: ;
   rdfs:label "used local model method"@en ;
   rdfs:range xsd:boolean ;
+.
+<https://www.researchgate.net/profile/Anna_Wagner13>
+  rdf:type foaf:Person ;
+  foaf:name "Anna Wagner" ;
+.
+<https://www.researchgate.net/profile/Mathias_Bonduel>
+  rdf:type foaf:Person ;
+  foaf:name "Mathias Bonduel" ;
+.
+<https://www.researchgate.net/profile/Pieter_Pauwels>
+  rdf:type foaf:Person ;
+  foaf:name "Pieter Pauwels" ;
 .

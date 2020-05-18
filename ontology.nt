@@ -1,19 +1,62 @@
 <https://w3id.org/gom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/gom> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
 <https://w3id.org/gom> <http://purl.org/dc/terms/creator> <https://www.researchgate.net/profile/Anna_Wagner13> .
 <https://w3id.org/gom> <http://purl.org/dc/terms/creator> <https://www.researchgate.net/profile/Mathias_Bonduel> .
 <https://w3id.org/gom> <http://purl.org/dc/terms/creator> <https://www.researchgate.net/profile/Pieter_Pauwels> .
 <https://w3id.org/gom> <http://purl.org/dc/terms/description> "The Geometry Metadata Ontology contains terminology to Coordinate Systems (CS), length units and other metadata (file size, software of origin, etc.). GOM is designed to be at least compatible with OMG (Ontology for Managing Geometry) and FOG (File Ontology for Geometry formats), and their related graph patterns.\r\n\r\nIn addition, GOM provides terminology for some experimental data structures to manage (marked as vs:term_status = unstable):\r\n* transformed geometry (e.g. a prototype door geometry that is reused for all doors of this type). This is closely related to the transformation of Coordinate Systems"@en .
 <https://w3id.org/gom> <http://purl.org/dc/terms/issued> "2019-10-15"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/gom> <http://purl.org/dc/terms/modified> "2019-10-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/gom> <http://purl.org/dc/terms/modified> "2020-05-18"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/gom> <http://purl.org/dc/terms/title> "GOM: Geometry Metadata Ontology"@en .
 <https://w3id.org/gom> <http://purl.org/vocab/vann/example> "https://raw.githubusercontent.com/mathib/fog-ontology/master/examples/sample_abox_snk_contractor.ttl" .
 <https://w3id.org/gom> <http://purl.org/vocab/vann/example> "https://raw.githubusercontent.com/mathib/fog-ontology/master/examples/sample_abox_snk_inspector.ttl" .
 <https://w3id.org/gom> <http://purl.org/vocab/vann/example> "https://raw.githubusercontent.com/mathib/gom-ontology/master/examples/gom-demo.json" .
 <https://w3id.org/gom> <http://purl.org/vocab/vann/preferredNamespacePrefix> "gom" .
 <https://w3id.org/gom> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/gom#" .
-<https://w3id.org/gom> <http://www.w3.org/2000/01/rdf-schema#comment> "- Version 0.0.1: initial version"@en .
-<https://w3id.org/gom> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1" .
+<https://w3id.org/gom> <http://www.w3.org/2000/01/rdf-schema#comment> "- Version 0.0.2: adjusted wrong domain, range and label on gom:hasCoordinateSystem; general typos; BREP and NURBS geometry\r\n- Version 0.0.1: initial version"@en .
+<https://w3id.org/gom> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.2" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/example
+<http://purl.org/vocab/vann/example> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/domainIncludes
+<http://schema.org/domainIncludes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/rangeIncludes
+<http://schema.org/rangeIncludes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # 
 # 
@@ -44,6 +87,9 @@
 # #
 # #################################################################
 # 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
 # https://w3id.org/gom#createdIn
 <https://w3id.org/gom#createdIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -77,11 +123,12 @@
 # https://w3id.org/gom#hasCoordinateSystem
 <https://w3id.org/gom#hasCoordinateSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/gom#hasCoordinateSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://w3id.org/gom#hasCoordinateSystem> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/gom#CartesianCoordinateSystem> .
-<https://w3id.org/gom#hasCoordinateSystem> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/gom#LengthUnit> .
+<https://w3id.org/gom#hasCoordinateSystem> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/gom#CoordinateSystem> .
+<https://w3id.org/gom#hasCoordinateSystem> <http://schema.org/domainIncludes> "omg:Geometry" .
+<https://w3id.org/gom#hasCoordinateSystem> <http://schema.org/domainIncludes> "omg:GeometryState" .
 <https://w3id.org/gom#hasCoordinateSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Geometry description is defined in exactly one Coordinate System. This property links a omg:Geometry of omg:GeometryState instance to a gom:CoordinateSystem instance."@en .
 <https://w3id.org/gom#hasCoordinateSystem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/gom#> .
-<https://w3id.org/gom#hasCoordinateSystem> <http://www.w3.org/2000/01/rdf-schema#label> "has length unit"@en .
+<https://w3id.org/gom#hasCoordinateSystem> <http://www.w3.org/2000/01/rdf-schema#label> "has coordinate system"@en .
 # 
 # https://w3id.org/gom#hasLengthUnit
 <https://w3id.org/gom#hasLengthUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -296,7 +343,7 @@
 <https://w3id.org/gom#totalOccluded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://w3id.org/gom#totalOccluded> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/gom#RepresentedAccuracyAnalysis> .
 <https://w3id.org/gom#totalOccluded> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
-<https://w3id.org/gom#totalOccluded> <http://www.w3.org/2000/01/rdf-schema#comment> "The percentage of total relevant surface area of the simplified geometry that is occluded"@en .
+<https://w3id.org/gom#totalOccluded> <http://www.w3.org/2000/01/rdf-schema#comment> "The percentage of total relevant surface area of the simplified geometry that is occluded during the data acquisition phase"@en .
 <https://w3id.org/gom#totalOccluded> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/gom#> .
 <https://w3id.org/gom#totalOccluded> <http://www.w3.org/2000/01/rdf-schema#label> "% occluded surface area"@en .
 # 
@@ -305,7 +352,7 @@
 <https://w3id.org/gom#totalRelevant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://w3id.org/gom#totalRelevant> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/gom#RepresentedAccuracyAnalysis> .
 <https://w3id.org/gom#totalRelevant> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
-<https://w3id.org/gom#totalRelevant> <http://www.w3.org/2000/01/rdf-schema#comment> "The percentage of total relevant surface area of the simplified geometry"@en .
+<https://w3id.org/gom#totalRelevant> <http://www.w3.org/2000/01/rdf-schema#comment> "The percentage of total relevant surface area of the simplified geometry for an accuracy analysis, i.e. the parts of a building element that are measured during the data acquisition phase"@en .
 <https://w3id.org/gom#totalRelevant> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/gom#> .
 <https://w3id.org/gom#totalRelevant> <http://www.w3.org/2000/01/rdf-schema#label> "% of total relevant surface area"@en .
 # 
@@ -327,6 +374,15 @@
 # #################################################################
 # 
 # 
+# http://purl.org/dc/terms/Agent
+<http://purl.org/dc/terms/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/vocommons/voaf#Vocabulary
+<http://purl.org/vocommons/voaf#Vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # https://w3id.org/gom#AffineCoordinateSystemTransformation
 <https://w3id.org/gom#AffineCoordinateSystemTransformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/gom#AffineCoordinateSystemTransformation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/gom#CoordinateSystemTransformation> .
@@ -340,6 +396,13 @@
 <https://w3id.org/gom#BoundingVolume> <http://www.w3.org/2000/01/rdf-schema#comment> "A closed 3D geometry representing a  bounding volume (e.g. a bounding box or another more exotic geometry). It is normally grouped into a omg:GeometryContext together with the geometry it wants to define a subpart of."@en .
 <https://w3id.org/gom#BoundingVolume> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/gom#> .
 <https://w3id.org/gom#BoundingVolume> <http://www.w3.org/2000/01/rdf-schema#label> "Bounding Volume"@en .
+# 
+# https://w3id.org/gom#BrepGeometry
+<https://w3id.org/gom#BrepGeometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/gom#BrepGeometry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/omg#Geometry> .
+<https://w3id.org/gom#BrepGeometry> <http://www.w3.org/2000/01/rdf-schema#comment> "A 3D BREP (boundary representation) geometry"@en .
+<https://w3id.org/gom#BrepGeometry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/gom#> .
+<https://w3id.org/gom#BrepGeometry> <http://www.w3.org/2000/01/rdf-schema#label> "BREP geometry"@en .
 # 
 # https://w3id.org/gom#CartesianCoordinateSystem
 <https://w3id.org/gom#CartesianCoordinateSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -379,10 +442,17 @@
 <https://w3id.org/gom#MeshGeometry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/gom#> .
 <https://w3id.org/gom#MeshGeometry> <http://www.w3.org/2000/01/rdf-schema#label> "Mesh geometry"@en .
 # 
+# https://w3id.org/gom#NurbsSurfaceGeometry
+<https://w3id.org/gom#NurbsSurfaceGeometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/gom#NurbsSurfaceGeometry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/omg#Geometry> .
+<https://w3id.org/gom#NurbsSurfaceGeometry> <http://www.w3.org/2000/01/rdf-schema#comment> "A 3D NURBS (non-uniform rational B-spline) surface geometry"@en .
+<https://w3id.org/gom#NurbsSurfaceGeometry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/gom#> .
+<https://w3id.org/gom#NurbsSurfaceGeometry> <http://www.w3.org/2000/01/rdf-schema#label> "NURBS surface geometry"@en .
+# 
 # https://w3id.org/gom#PlanGeometry
 <https://w3id.org/gom#PlanGeometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/gom#PlanGeometry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/omg#Geometry> .
-<https://w3id.org/gom#PlanGeometry> <http://www.w3.org/2000/01/rdf-schema#comment> "A 2D plan geometry including floorplans, ceilingplans, elevations, sections and 2D ortographic drawings"@en .
+<https://w3id.org/gom#PlanGeometry> <http://www.w3.org/2000/01/rdf-schema#comment> "A 2D plan geometry including floorplans, ceilingplans, elevations, sections and 2D orthographic drawings"@en .
 <https://w3id.org/gom#PlanGeometry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/gom#> .
 <https://w3id.org/gom#PlanGeometry> <http://www.w3.org/2000/01/rdf-schema#label> "2D plan geometry"@en .
 # 
@@ -399,6 +469,11 @@
 <https://w3id.org/gom#RepresentedAccuracyAnalysis> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/gom#> .
 <https://w3id.org/gom#RepresentedAccuracyAnalysis> <http://www.w3.org/2000/01/rdf-schema#label> "represented accuracy analysis"@en .
 # 
+# https://w3id.org/omg#Geometry
+<https://w3id.org/omg#Geometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/omg#GeometryState
+<https://w3id.org/omg#GeometryState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # 
 # 
@@ -409,9 +484,17 @@
 # #################################################################
 # 
 # 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Agent> .
+# 
+# https://creativecommons.org/licenses/by/4.0/
+<https://creativecommons.org/licenses/by/4.0/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
 # https://w3id.org/gom
 <https://w3id.org/gom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/gom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocommons/voaf#Vocabulary> .
+<https://w3id.org/gom> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
 # 
 # https://w3id.org/gom#Meshlab_v2016
 <https://w3id.org/gom#Meshlab_v2016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

@@ -14,6 +14,9 @@ This section provides details for each class and property defined by GOM: Geomet
          <a href="#BoundingVolume" title="https://w3id.org/gom#BoundingVolume">Bounding Volume</a>
       </li>
       <li>
+         <a href="#BrepGeometry" title="https://w3id.org/gom#BrepGeometry">BREP geometry</a>
+      </li>
+      <li>
          <a href="#CartesianCoordinateSystem" title="https://w3id.org/gom#CartesianCoordinateSystem">Coordinate System</a>
       </li>
       <li>
@@ -34,6 +37,9 @@ This section provides details for each class and property defined by GOM: Geomet
          <a href="#MeshGeometry" title="https://w3id.org/gom#MeshGeometry">Mesh geometry</a>
       </li>
       <li>
+         <a href="#NurbsSurfaceGeometry" title="https://w3id.org/gom#NurbsSurfaceGeometry">NURBS surface geometry</a>
+      </li>
+      <li>
          <a href="#PointCloudGeometry" title="https://w3id.org/gom#PointCloudGeometry">point cloud geometry</a>
       </li>
       <li>
@@ -48,7 +54,7 @@ This section provides details for each class and property defined by GOM: Geomet
       <p>
          <strong>IRI:</strong> https://w3id.org/gom#PlanGeometry</p>
       <div class="comment">
-         <span class="markdown">A 2D plan geometry including floorplans, ceilingplans, elevations, sections and 2D ortographic drawings</span>
+         <span class="markdown">A 2D plan geometry including floorplans, ceilingplans, elevations, sections and 2D orthographic drawings</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -121,6 +127,30 @@ This section provides details for each class and property defined by GOM: Geomet
          </dd>
       </dl>
    </div>
+   <div class="entity" id="BrepGeometry">
+      <h3>BREP geometry<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/gom#BrepGeometry</p>
+      <div class="comment">
+         <span class="markdown">A 3D BREP (boundary representation) geometry</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/gom#">https://w3id.org/gom#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="https://w3id.org/omg#Geometry">geometry</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="CartesianCoordinateSystem">
       <h3>Coordinate System<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -145,8 +175,7 @@ This section provides details for each class and property defined by GOM: Geomet
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#hasCoordinateSystem" title="https://w3id.org/gom#hasCoordinateSystem">has length unit</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasLengthUnit" title="https://w3id.org/gom#hasLengthUnit">has length unit</a>
+            <a href="#hasLengthUnit" title="https://w3id.org/gom#hasLengthUnit">has length unit</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
@@ -183,6 +212,7 @@ This section provides details for each class and property defined by GOM: Geomet
          <dt>is in range of</dt>
          <dd>
             <a href="#fromCoordinateSystem" title="https://w3id.org/gom#fromCoordinateSystem">from Coordinate System</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasCoordinateSystem" title="https://w3id.org/gom#hasCoordinateSystem">has coordinate system</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#toCoordinateSystem" title="https://w3id.org/gom#toCoordinateSystem">to Coordinate System</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
@@ -268,8 +298,7 @@ This section provides details for each class and property defined by GOM: Geomet
       <dl class="description">
          <dt>is in range of</dt>
          <dd>
-            <a href="#hasCoordinateSystem" title="https://w3id.org/gom#hasCoordinateSystem">has length unit</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasLengthUnit" title="https://w3id.org/gom#hasLengthUnit">has length unit</a>
+            <a href="#hasLengthUnit" title="https://w3id.org/gom#hasLengthUnit">has length unit</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -283,6 +312,30 @@ This section provides details for each class and property defined by GOM: Geomet
          <strong>IRI:</strong> https://w3id.org/gom#MeshGeometry</p>
       <div class="comment">
          <span class="markdown">A 3D mesh geometry consisting of planar faces connected via their edges</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/gom#">https://w3id.org/gom#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="https://w3id.org/omg#Geometry">geometry</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="NurbsSurfaceGeometry">
+      <h3>NURBS surface geometry<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/gom#NurbsSurfaceGeometry</p>
+      <div class="comment">
+         <span class="markdown">A 3D NURBS (non-uniform rational B-spline) surface geometry</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -372,7 +425,7 @@ This section provides details for each class and property defined by GOM: Geomet
          <a href="#fromCoordinateSystem" title="https://w3id.org/gom#fromCoordinateSystem">from Coordinate System</a>
       </li>
       <li>
-         <a href="#hasCoordinateSystem" title="https://w3id.org/gom#hasCoordinateSystem">has length unit</a>
+         <a href="#hasCoordinateSystem" title="https://w3id.org/gom#hasCoordinateSystem">has coordinate system</a>
       </li>
       <li>
          <a href="#hasLengthUnit" title="https://w3id.org/gom#hasLengthUnit">has length unit</a>
@@ -417,6 +470,7 @@ This section provides details for each class and property defined by GOM: Geomet
             </dd>
             <dd>
                <span class="dotted" title="https://w3id.org/omg#GeometryState">geometry state</span>
+               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
@@ -507,7 +561,7 @@ This section provides details for each class and property defined by GOM: Geomet
       </div>
    </div>
    <div class="entity" id="hasCoordinateSystem">
-      <h3>has length unit<sup class="type-op" title="object property">op</sup>
+      <h3>has coordinate system<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
@@ -526,14 +580,12 @@ This section provides details for each class and property defined by GOM: Geomet
          <p>
             <strong>has characteristics:</strong> functional</p>
          <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#CartesianCoordinateSystem" title="https://w3id.org/gom#CartesianCoordinateSystem">Coordinate System</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
+            <dt>domain includes</dt>
+            <dd/>
+            <dd/>
             <dt>has range</dt>
             <dd>
-               <a href="#LengthUnit" title="https://w3id.org/gom#LengthUnit">Length unit</a>
+               <a href="#CoordinateSystem" title="https://w3id.org/gom#CoordinateSystem">Coordinate System</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -604,6 +656,7 @@ This section provides details for each class and property defined by GOM: Geomet
             </dd>
             <dd>
                <span class="dotted" title="https://w3id.org/omg#GeometryState">geometry state</span>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -640,6 +693,7 @@ This section provides details for each class and property defined by GOM: Geomet
             </dd>
             <dd>
                <span class="dotted" title="https://w3id.org/omg#GeometryState">geometry state</span>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -791,7 +845,7 @@ This section provides details for each class and property defined by GOM: Geomet
       <p>
          <strong>IRI:</strong> https://w3id.org/gom#totalOccluded</p>
       <div class="comment">
-         <span class="markdown">The percentage of total relevant surface area of the simplified geometry that is occluded</span>
+         <span class="markdown">The percentage of total relevant surface area of the simplified geometry that is occluded during the data acquisition phase</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -823,7 +877,7 @@ This section provides details for each class and property defined by GOM: Geomet
       <p>
          <strong>IRI:</strong> https://w3id.org/gom#totalRelevant</p>
       <div class="comment">
-         <span class="markdown">The percentage of total relevant surface area of the simplified geometry</span>
+         <span class="markdown">The percentage of total relevant surface area of the simplified geometry for an accuracy analysis, i.e. the parts of a building element that are measured during the data acquisition phase</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -1098,6 +1152,7 @@ This section provides details for each class and property defined by GOM: Geomet
             </dd>
             <dd>
                <span class="dotted" title="https://w3id.org/omg#GeometryState">geometry state</span>
+               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
@@ -1134,6 +1189,7 @@ This section provides details for each class and property defined by GOM: Geomet
             </dd>
             <dd>
                <span class="dotted" title="https://w3id.org/omg#GeometryState">geometry state</span>
+               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
@@ -1170,6 +1226,7 @@ This section provides details for each class and property defined by GOM: Geomet
             </dd>
             <dd>
                <span class="dotted" title="https://w3id.org/omg#GeometryState">geometry state</span>
+               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
@@ -1206,6 +1263,7 @@ This section provides details for each class and property defined by GOM: Geomet
             </dd>
             <dd>
                <span class="dotted" title="https://w3id.org/omg#GeometryState">geometry state</span>
+               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
@@ -1241,6 +1299,7 @@ This section provides details for each class and property defined by GOM: Geomet
             </dd>
             <dd>
                <span class="dotted" title="https://w3id.org/omg#GeometryState">geometry state</span>
+               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
@@ -1277,6 +1336,7 @@ This section provides details for each class and property defined by GOM: Geomet
             </dd>
             <dd>
                <span class="dotted" title="https://w3id.org/omg#GeometryState">geometry state</span>
+               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
@@ -1316,6 +1376,7 @@ This section provides details for each class and property defined by GOM: Geomet
             </dd>
             <dd>
                <span class="dotted" title="https://w3id.org/omg#GeometryState">geometry state</span>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>

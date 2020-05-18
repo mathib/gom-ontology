@@ -13,7 +13,6 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="http://schema.org/">
     <owl:Ontology rdf:about="https://w3id.org/gom">
-        <ns:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:creator rdf:resource="https://www.researchgate.net/profile/Anna_Wagner13"/>
         <terms:creator rdf:resource="https://www.researchgate.net/profile/Mathias_Bonduel"/>
         <terms:creator rdf:resource="https://www.researchgate.net/profile/Pieter_Pauwels"/>
@@ -22,20 +21,117 @@
 In addition, GOM provides terminology for some experimental data structures to manage (marked as vs:term_status = unstable):
 * transformed geometry (e.g. a prototype door geometry that is reused for all doors of this type). This is closely related to the transformation of Coordinate Systems</terms:description>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-15</terms:issued>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-15</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-05-18</terms:modified>
         <terms:title xml:lang="en">GOM: Geometry Metadata Ontology</terms:title>
         <vann:example>https://raw.githubusercontent.com/mathib/fog-ontology/master/examples/sample_abox_snk_contractor.ttl</vann:example>
         <vann:example>https://raw.githubusercontent.com/mathib/fog-ontology/master/examples/sample_abox_snk_inspector.ttl</vann:example>
         <vann:example>https://raw.githubusercontent.com/mathib/gom-ontology/master/examples/gom-demo.json</vann:example>
         <vann:preferredNamespacePrefix>gom</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://w3id.org/gom#</vann:preferredNamespaceUri>
-        <rdfs:comment xml:lang="en">- Version 0.0.1: initial version</rdfs:comment>
-        <owl:versionInfo>0.0.1</owl:versionInfo>
+        <rdfs:comment xml:lang="en">- Version 0.0.2: adjusted wrong domain, range and label on gom:hasCoordinateSystem; general typos; BREP and NURBS geometry
+- Version 0.0.1: initial version</rdfs:comment>
+        <owl:versionInfo>0.0.2</owl:versionInfo>
     </owl:Ontology>
     
 
 
-   <!-- 
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/example -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/example"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://schema.org/domainIncludes -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/domainIncludes"/>
+    
+
+
+    <!-- http://schema.org/rangeIncludes -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/rangeIncludes"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Datatypes
@@ -78,6 +174,13 @@ In addition, GOM provides terminology for some experimental data structures to m
      -->
 
 
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+
+    <owl:ObjectProperty rdf:about="http://creativecommons.org/ns#license"/>
     
 
 
@@ -130,11 +233,12 @@ In addition, GOM provides terminology for some experimental data structures to m
 
     <owl:ObjectProperty rdf:about="https://w3id.org/gom#hasCoordinateSystem">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/gom#CartesianCoordinateSystem"/>
-        <rdfs:range rdf:resource="https://w3id.org/gom#LengthUnit"/>
+        <rdfs:range rdf:resource="https://w3id.org/gom#CoordinateSystem"/>
+        <schema:domainIncludes>omg:Geometry</schema:domainIncludes>
+        <schema:domainIncludes>omg:GeometryState</schema:domainIncludes>
         <rdfs:comment xml:lang="en">Geometry description is defined in exactly one Coordinate System. This property links a omg:Geometry of omg:GeometryState instance to a gom:CoordinateSystem instance.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/gom#"/>
-        <rdfs:label xml:lang="en">has length unit</rdfs:label>
+        <rdfs:label xml:lang="en">has coordinate system</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -462,7 +566,7 @@ In addition, GOM provides terminology for some experimental data structures to m
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/gom#RepresentedAccuracyAnalysis"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-        <rdfs:comment xml:lang="en">The percentage of total relevant surface area of the simplified geometry that is occluded</rdfs:comment>
+        <rdfs:comment xml:lang="en">The percentage of total relevant surface area of the simplified geometry that is occluded during the data acquisition phase</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/gom#"/>
         <rdfs:label xml:lang="en">% occluded surface area</rdfs:label>
     </owl:DatatypeProperty>
@@ -476,7 +580,7 @@ In addition, GOM provides terminology for some experimental data structures to m
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/gom#RepresentedAccuracyAnalysis"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-        <rdfs:comment xml:lang="en">The percentage of total relevant surface area of the simplified geometry</rdfs:comment>
+        <rdfs:comment xml:lang="en">The percentage of total relevant surface area of the simplified geometry for an accuracy analysis, i.e. the parts of a building element that are measured during the data acquisition phase</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/gom#"/>
         <rdfs:label xml:lang="en">% of total relevant surface area</rdfs:label>
     </owl:DatatypeProperty>
@@ -507,7 +611,27 @@ In addition, GOM provides terminology for some experimental data structures to m
 
 
     
- 
+
+
+    <!-- http://purl.org/dc/terms/Agent -->
+
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/Agent"/>
+    
+
+
+    <!-- http://purl.org/vocommons/voaf#Vocabulary -->
+
+
+    <owl:Class rdf:about="http://purl.org/vocommons/voaf#Vocabulary"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    
 
 
     <!-- https://w3id.org/gom#AffineCoordinateSystemTransformation -->
@@ -530,6 +654,18 @@ In addition, GOM provides terminology for some experimental data structures to m
         <rdfs:comment xml:lang="en">A closed 3D geometry representing a  bounding volume (e.g. a bounding box or another more exotic geometry). It is normally grouped into a omg:GeometryContext together with the geometry it wants to define a subpart of.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/gom#"/>
         <rdfs:label xml:lang="en">Bounding Volume</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/gom#BrepGeometry -->
+
+
+    <owl:Class rdf:about="https://w3id.org/gom#BrepGeometry">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/omg#Geometry"/>
+        <rdfs:comment xml:lang="en">A 3D BREP (boundary representation) geometry</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/gom#"/>
+        <rdfs:label xml:lang="en">BREP geometry</rdfs:label>
     </owl:Class>
     
 
@@ -602,12 +738,24 @@ In addition, GOM provides terminology for some experimental data structures to m
     
 
 
+    <!-- https://w3id.org/gom#NurbsSurfaceGeometry -->
+
+
+    <owl:Class rdf:about="https://w3id.org/gom#NurbsSurfaceGeometry">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/omg#Geometry"/>
+        <rdfs:comment xml:lang="en">A 3D NURBS (non-uniform rational B-spline) surface geometry</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/gom#"/>
+        <rdfs:label xml:lang="en">NURBS surface geometry</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/gom#PlanGeometry -->
 
 
     <owl:Class rdf:about="https://w3id.org/gom#PlanGeometry">
         <rdfs:subClassOf rdf:resource="https://w3id.org/omg#Geometry"/>
-        <rdfs:comment xml:lang="en">A 2D plan geometry including floorplans, ceilingplans, elevations, sections and 2D ortographic drawings</rdfs:comment>
+        <rdfs:comment xml:lang="en">A 2D plan geometry including floorplans, ceilingplans, elevations, sections and 2D orthographic drawings</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/gom#"/>
         <rdfs:label xml:lang="en">2D plan geometry</rdfs:label>
     </owl:Class>
@@ -636,6 +784,21 @@ In addition, GOM provides terminology for some experimental data structures to m
     </owl:Class>
     
 
+
+    <!-- https://w3id.org/omg#Geometry -->
+
+
+    <owl:Class rdf:about="https://w3id.org/omg#Geometry"/>
+    
+
+
+    <!-- https://w3id.org/omg#GeometryState -->
+
+
+    <owl:Class rdf:about="https://w3id.org/omg#GeometryState"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -648,11 +811,28 @@ In addition, GOM provides terminology for some experimental data structures to m
     
 
 
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+
+    <owl:NamedIndividual rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://creativecommons.org/licenses/by/4.0/ -->
+
+
+    <owl:NamedIndividual rdf:about="https://creativecommons.org/licenses/by/4.0/"/>
+    
+
+
     <!-- https://w3id.org/gom -->
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/gom">
         <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
+        <ns:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
     </owl:NamedIndividual>
     
 
